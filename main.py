@@ -37,7 +37,7 @@ def game_rules(x, y):
 
     # These are the win conditions
     if (x == 'R' and y == 'S') or (x == 'S' and y == 'P') or (x == 'P' and y == 'R'):
-        return print("You won! GG")
+        return print("Player Wins. GG")
         
     # The game function gets called again when it's a draw
     elif(x == y):
@@ -46,6 +46,6 @@ def game_rules(x, y):
         return
 
     # This runs when none of the other conditions are met. In other words, this runs when the computer has won.
-    return print("You lost!")
+    return print("Computer Wins.")
 
 game()
